@@ -41,12 +41,10 @@ document.addEventListener("DOMContentLoaded", () => {
         switch (true) {
             case event.target.tagName === 'LI':
                 renderBook(event)
-        }
-    })
-
-    document.addEventListener('click', event => {
-        if (event.target.dataset.button === 'read-book') {
-            alert('Thank you for reading this book')
+                break
+            case event.target.dataset.button === 'read-book':
+                alert('Thank you for reading this book')
+                break
         }
     })
 })
